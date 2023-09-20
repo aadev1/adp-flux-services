@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   # - ../../../ffc-demo/base/kustomize.yaml
   - ../../../team-gg/base
+  - ../../../team-aa/base
