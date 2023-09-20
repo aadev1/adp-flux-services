@@ -5,3 +5,4 @@ resources:
   - aso-secret.yaml
   - repository.yaml
   - repository-kustomization.yaml
+  # trigger sync
