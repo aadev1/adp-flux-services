@@ -14,6 +14,7 @@ spec:
   path: ./services/environments/snd/01
   postBuild:
     substitute:
+      NAMESPACE: "ffc-demo"
       ENVIRONMENT: "snd"
       ACR_NAME: "sndcdoinfcr2401p"
       CLUSTER: "00"
