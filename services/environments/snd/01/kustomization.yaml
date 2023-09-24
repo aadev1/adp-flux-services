@@ -5,8 +5,8 @@ metadata:
 resources:
   - kustomize.yaml
   - ../../../base
-#   - repository.yaml
-#   - release.yaml
+   - repository.yaml
+   - release.yaml
 
 # patches:
 #   - path: snd.yaml
