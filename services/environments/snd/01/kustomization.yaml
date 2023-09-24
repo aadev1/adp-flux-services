@@ -4,11 +4,11 @@ metadata:
   name: cluster-base
 resources:
   - ../../../base
-  - repository.yaml
-  - release.yaml
+#   - repository.yaml
+#   - release.yaml
 
-patches:
-  - path: snd.yaml
+# patches:
+#   - path: snd.yaml
 
 
 #  - kustomize.yaml
