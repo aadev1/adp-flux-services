@@ -3,6 +3,12 @@ kind: Kustomization
 metadata:
   name: cluster-base
 resources:
-  - kustomize.yaml
-  - ../base
+  - ../../base
+  - repository.yaml
+  - release.yaml
+
+patches:
+  - path: snd.yaml
+#  - kustomize.yaml
+#  - ../base
   
