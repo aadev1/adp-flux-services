@@ -4,7 +4,8 @@ metadata:
   name: cluster-base
 resources:
   - kustomize.yaml
-  - ../../../base
+  #- ../../../base
+  - ../base
   - repository.yaml
   - release.yaml
 
