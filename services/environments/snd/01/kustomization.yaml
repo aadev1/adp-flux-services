@@ -6,8 +6,8 @@ resources:
   - kustomize.yaml
   #- ../../../base
   - ../base
-  - repository.yaml
-  - release.yaml
+  #- repository.yaml
+  #- release.yaml
 
 patches:
   - path: snd.yaml
