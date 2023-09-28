@@ -3,6 +3,6 @@ kind: Kustomization
 metadata:
   name: cluster-base
 resources:
-  # - kustomize.yaml
+  - kustomize.yaml
   - ../base
   
