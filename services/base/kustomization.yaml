@@ -4,3 +4,5 @@ resources:
   - namespace.yaml
   - service-account.yaml
   - resource-group.yaml
+  - userassigned-identity.yaml
+  - federated-credential.yaml
