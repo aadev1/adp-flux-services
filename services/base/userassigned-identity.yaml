@@ -1,0 +1,9 @@
+apiVersion: managedidentity.azure.com/v1api20181130
+kind: UserAssignedIdentity
+metadata:
+  name: ${NAMESPACE}-aso-mi
+  namespace: platform-team
+spec:
+  location: uksouth
+  owner:
+    name: asofluxpoc # THIS NEEDS TO BE A MANAGED IDENTITY RESOURCE GROUP MANAGED BY THE PLATFORM TEAM

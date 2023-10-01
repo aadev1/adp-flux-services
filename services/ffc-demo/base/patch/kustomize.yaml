@@ -20,4 +20,5 @@ spec:
       ENVIRONMENT: "${ENVIRONMENT}"
       ACR_NAME: "${ACR_NAME}"
       CLUSTER: "\"${CLUSTER}\""
+      CLUSTER_OIDC: "https://uksouth.oic.prod-aks.azure.com/6f504113-6b64-43f2-ade9-242e05780007/1fe22de2-50f1-43a0-b9b2-15edfe273f4e/"
   
