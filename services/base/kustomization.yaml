@@ -7,3 +7,4 @@ resources:
   - mi-resource-group.yaml
   - userassigned-identity.yaml
   - federated-credential.yaml
+  - aso-team-secret.yaml
