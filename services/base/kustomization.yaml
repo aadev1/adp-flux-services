@@ -5,7 +5,7 @@ resources:
   - service-account.yaml
   - resource-group.yaml
   - mi-resource-group.yaml
-  - mi-resource-group1.yaml
+  - mi-resource-group-delete.yaml
   - userassigned-identity.yaml
   - federated-credential.yaml
   - role-assignment.yaml
