@@ -1,7 +1,7 @@
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: Namespace
 metadata:
-  name: aso-namespace
+  name: asoservicebus
   namespace: platform-team
   annotations:
     serviceoperator.azure.com/reconcile-policy: detach-on-delete
