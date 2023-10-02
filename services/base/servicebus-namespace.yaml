@@ -8,7 +8,7 @@ metadata:
 spec:
   location: uksouth
   owner:
-    name: asofluxpoc
+    name: aso-mi-rg-delete
   sku:
     name: Basic
   zoneRedundant: false
