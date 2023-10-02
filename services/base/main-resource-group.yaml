@@ -1,0 +1,9 @@
+apiVersion: resources.azure.com/v1api20200601
+kind: ResourceGroup
+metadata:
+  name: asofluxpoc
+  namespace: platform-team
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: skip
+spec:
+  location: uksouth
