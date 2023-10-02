@@ -1,0 +1,14 @@
+apiVersion: servicebus.azure.com/v1api20210101preview
+kind: Namespace
+metadata:
+  name: aso-namespace
+  namespace: platform-team
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: detach-on-delete
+spec:
+  location: uksouth
+  owner:
+    name: asofluxpoc
+  sku:
+    name: Basic
+  zoneRedundant: false
