@@ -1,6 +1,6 @@
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: NamespacesQueue
-servicebus.azure.commetadata:
+metadata:
   name: calculation
   namespace: ${NAMESPACE}
 spec:
