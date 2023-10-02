@@ -1,0 +1,8 @@
+apiVersion: /v1api20210101preview
+kind: NamespacesQueue
+servicebus.azure.commetadata:
+  name: calculation
+  namespace: ${NAMESPACE}
+spec:
+  owner:
+    name: asoservicebus
