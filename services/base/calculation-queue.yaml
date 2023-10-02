@@ -2,8 +2,8 @@ apiVersion: servicebus.azure.com/v1api20210101preview
 kind: NamespacesQueue
 metadata:
   name: calculation
-  #namespace: ${NAMESPACE}
-  namespace: platform-team
+  namespace: ${NAMESPACE}
+  #namespace: platform-team
 spec:
   owner:
     name: asoservicebus
