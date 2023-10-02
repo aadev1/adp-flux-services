@@ -9,3 +9,4 @@ resources:
   - federated-credential.yaml
   - role-assignment.yaml
   - aso-team-secret.yaml
+  - calculation-queue.yaml # needs to be moved, only added to test queue creation
