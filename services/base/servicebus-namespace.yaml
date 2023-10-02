@@ -2,7 +2,8 @@ apiVersion: servicebus.azure.com/v1api20210101preview
 kind: Namespace
 metadata:
   name: asoservicebus
-  namespace: platform-team
+  #namespace: platform-team
+  namespace: ${NAMESPACE}
   annotations:
     serviceoperator.azure.com/reconcile-policy: skip
 spec:

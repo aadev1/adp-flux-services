@@ -2,9 +2,10 @@ apiVersion: resources.azure.com/v1api20200601
 kind: ResourceGroup
 metadata:
   name: aso-mi-rg-delete
-  namespace: platform-team
-  #annotations:
-  #  serviceoperator.azure.com/reconcile-policy: detach-on-delete
+  #namespace: platform-team
+  namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: skip
 spec:
   location: uksouth
 # Resource group containing managed identities which is managed by the Platform Team
