@@ -7,3 +7,11 @@ spec:
   location: uksouth
   owner:
     name: aso-mi-rg # THIS NEEDS TO BE A MANAGED IDENTITY RESOURCE GROUP MANAGED BY THE PLATFORM TEAM
+  operatorSpec:
+    configMaps:
+      principalId:
+        name: ${NAMESPACE}-aso-mi-identity-settings
+        key: principalId
+      clientId:
+        name: ${NAMESPACE}-aso-mi-identity-settings
+        key: clientId

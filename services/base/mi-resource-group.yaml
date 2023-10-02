@@ -5,3 +5,4 @@ metadata:
   namespace: platform-team
 spec:
   location: uksouth
+# Resource group containing managed identities which is managed by the Platform Team
