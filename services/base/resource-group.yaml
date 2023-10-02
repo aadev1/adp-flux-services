@@ -4,7 +4,7 @@ metadata:
   name: ${NAMESPACE}-rg
   namespace: platform-team
   annotations:
-  serviceoperator.azure.com/reconcile-policy: detach-on-delete
+    serviceoperator.azure.com/reconcile-policy: detach-on-delete
 spec:
   location: uksouth
 # Team resource group
