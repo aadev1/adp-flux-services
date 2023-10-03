@@ -12,4 +12,4 @@ resources:
   #- role-assignment.yaml
   - aso-team-secret.yaml
   - servicebus-namespace.yaml
-  #- calculation-queue.yaml # needs to be moved, only added to test queue creation
+  - calculation-queue.yaml # needs to be moved, only added to test queue creation
