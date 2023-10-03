@@ -1,0 +1,18 @@
+apiVersion: authorization.azure.com/v1api20200801preview
+kind: RoleAssignment
+metadata:
+  name: ${NAMESPACE}-aso-sb-rbac
+  namespace: platform-team
+spec:
+  owner:
+    # name: ${NAMESPACE}-rg
+    # group: servicebus.azure.com
+    # kind: Namespace
+    armId: /subscriptions/55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1/resourceGroups/asofluxpoc/providers/Microsoft.ServiceBus/namespaces/asoservicebus
+  # This is the Principal ID of the AAD identity to which the role will be assigned
+  principalIdFromConfig:
+    name: ${NAMESPACE}-aso-mi-identity-settings
+    key: principalId
+  roleDefinitionReference:
+    # Azure Service Bus Data Owner
+    armId: /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/090c5cfd-751d-490a-894a-3ce6f1109419
