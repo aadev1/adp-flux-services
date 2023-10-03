@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - service-account.yaml
-  - aso-servicebus-test.yaml
+  - resource-group-sb-test.yaml
   - mi-resource-group-delete.yaml
   #- main-resource-group.yaml
   #- resource-group.yaml
