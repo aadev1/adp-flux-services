@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - aso-secret.yaml
-  - resource-group-sb-test.yaml
+  #- resource-group-sb-test.yaml
   #- servicebus-namespace.yaml
-  #- calculation-queue.yaml
+  - calculation-queue.yaml
 
   # trigger sync ...

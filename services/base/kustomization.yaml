@@ -3,16 +3,16 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - service-account.yaml
-  - resource-group-sb-test.yaml
-  - mi-resource-group-delete.yaml
-  #- main-resource-group.yaml
-  #- resource-group.yaml
-  - mi-resource-group.yaml
   - userassigned-identity.yaml
   - federated-credential.yaml
-  #- role-assignment.yaml
-  - aso-team-secret.yaml
-  - servicebus-namespace.yaml
-  - servicebus-namespace-test.yaml
-  - calculation-queue.yaml # needs to be moved, only added to test queue creation
-  #- calculation-queue-test.yaml
+  - resource-group.yaml
+  - role-assignments.yaml
+  # - resource-group-sb-test.yaml
+  # - mi-resource-group-delete.yaml
+  # - main-resource-group.yaml
+  # - mi-resource-group.yaml
+  # - aso-team-secret.yaml
+  # - servicebus-namespace.yaml
+  # - servicebus-namespace-test.yaml
+  # - calculation-queue.yaml # needs to be moved, only added to test queue creation
+  # - calculation-queue-test.yaml

@@ -1,9 +1,12 @@
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: NamespacesQueue
 metadata:
-  name: teamaacalculation
+  name: teamaacalculation4
   namespace: team-aa
   #namespace: platform-team
 spec:
   owner:
-    name: asoservicebus
+    armId: /subscriptions/55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1/resourceGroups/aso-servicebus-test/providers/Microsoft.ServiceBus/namespaces/asoservicebustest
+    # name: asoservicebustest
+    # group: servicebus.azure.com
+    # kind: Namespace

@@ -1,7 +1,7 @@
 apiVersion: authorization.azure.com/v1api20200801preview
 kind: RoleAssignment
 metadata:
-  name: ${NAMESPACE}-aso-mi-rbac
+  name: ${NAMESPACE}-aso-rg-rbac
   namespace: platform-team
 spec:
   owner:
