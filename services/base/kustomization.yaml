@@ -15,4 +15,4 @@ resources:
   - servicebus-namespace.yaml
   - servicebus-namespace-test.yaml
   - calculation-queue.yaml # needs to be moved, only added to test queue creation
-  - calculation-queue-test.yaml
+  #- calculation-queue-test.yaml
