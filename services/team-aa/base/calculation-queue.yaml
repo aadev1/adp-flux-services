@@ -1,0 +1,9 @@
+apiVersion: servicebus.azure.com/v1api20210101preview
+kind: NamespacesQueue
+metadata:
+  name: teamaacalculation
+  namespace: team-aa
+  #namespace: platform-team
+spec:
+  owner:
+    name: asoservicebus
