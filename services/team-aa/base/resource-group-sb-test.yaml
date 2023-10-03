@@ -4,8 +4,8 @@ metadata:
   name: aso-mi-rg-delete
   #namespace: platform-team
   namespace: team-aa
-  #annotations:
-  #  serviceoperator.azure.com/reconcile-policy: skip
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: skip
 spec:
   location: uksouth
 # Resource group containing managed identities which is managed by the Platform Team
