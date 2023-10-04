@@ -1,0 +1,8 @@
+apiVersion: servicebus.azure.com/v1api20210101preview
+kind: NamespacesQueue
+metadata:
+  name: ${NAMESPACE}-demoqueue
+  namespace: ${NAMESPACE}
+spec:
+  owner:
+    armId: /subscriptions/55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1/resourceGroups/asofluxpoc/providers/Microsoft.ServiceBus/namespaces/asoservicebus
