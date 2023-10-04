@@ -1,7 +1,7 @@
 apiVersion: authorization.azure.com/v1api20200801preview
 kind: RoleAssignment
 metadata:
-  name: ${NAMESPACE}-aso-sb-rbac
+  name: ${SUBSCRIPTION_ID}-${SERVICEBUS_RG}-${NAMESPACE}-aso-sb-rbac
   namespace: platform-team
 spec:
   owner:
