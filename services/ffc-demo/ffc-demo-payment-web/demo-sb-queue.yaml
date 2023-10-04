@@ -1,8 +1,10 @@
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: NamespacesQueue
 metadata:
-  name: ${NAMESPACE}-asotestqueue1
+  name: ${NAMESPACE}-asotestqueue
   namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: detach-on-delete
 spec:
   owner:
     armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/${SERVICEBUS_RG}/providers/Microsoft.ServiceBus/namespaces/${SERVICEBUS_NS}
