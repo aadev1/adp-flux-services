@@ -6,7 +6,7 @@ metadata:
 spec:
   location: uksouth
   owner:
-    armId: /subscriptions/${SUBSCRIPTION_ID_STRING}/resourceGroups/aso-mi-rg
+    armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/aso-mi-rg
   operatorSpec:
     configMaps:
       principalId:

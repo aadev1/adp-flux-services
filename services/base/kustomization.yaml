@@ -3,9 +3,9 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - service-account.yaml
-  - userassigned-identity.yaml
-  - federated-credential.yaml
-  - resource-group.yaml
-  - role-assignments.yaml
-  - role-assignments-sb.yaml
-  - aso-team-secret.yaml
+  - aso/userassigned-identity.yaml
+  - aso/federated-credential.yaml
+  - aso/resource-group.yaml
+  - aso/role-assignments.yaml
+  - aso/role-assignments-sb.yaml
+  - aso/team-secret.yaml

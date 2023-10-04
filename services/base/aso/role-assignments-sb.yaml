@@ -8,7 +8,7 @@ spec:
     # name: ${NAMESPACE}-rg
     # group: servicebus.azure.com
     # kind: Namespace
-    armId: /subscriptions/55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1/resourceGroups/asofluxpoc/providers/Microsoft.ServiceBus/namespaces/asoservicebus
+    armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/asofluxpoc/providers/Microsoft.ServiceBus/namespaces/asoservicebus
   # This is the Principal ID of the AAD identity to which the role will be assigned
   principalIdFromConfig:
     name: ${NAMESPACE}-aso-mi-identity-settings
