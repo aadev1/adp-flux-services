@@ -8,7 +8,6 @@ spec:
     name: ${NAMESPACE}-rg
     group: resources.azure.com
     kind: ResourceGroup
-  # This is the Principal ID of the AAD identity to which the role will be assigned
   principalIdFromConfig:
     name: ${NAMESPACE}-aso-mi-identity-settings
     key: principalId
