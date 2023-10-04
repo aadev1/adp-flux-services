@@ -17,4 +17,8 @@ spec:
       ENVIRONMENT: "snd"
       ACR_NAME: "sndcdoinfcr2401p"
       CLUSTER: "01"
+      SERVICEBUS_RG: "sndadpinfrg1401"
+      SERVICEBUS_NS: "sndadpinfsb1401"
+      INFRA_RG: "sndadpinfrg1401"
+      TEAM_MI_NAME: "sndadpinfmid1401"
 
