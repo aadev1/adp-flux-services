@@ -7,4 +7,5 @@ resources:
   - federated-credential.yaml
   - resource-group.yaml
   - role-assignments.yaml
+  - role-assignments-sb.yaml
   - aso-team-secret.yaml
