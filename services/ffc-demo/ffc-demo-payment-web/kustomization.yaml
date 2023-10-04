@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
   - aso-helm-repository.yaml
   - aso-helm-release.yaml
+  - aso-image-repository.yaml  
+  - aso-image-policy.yaml
   - helm-repository.yaml
   - helm-release.yaml
   - image-repository.yaml  
