@@ -4,7 +4,7 @@ metadata:
   name: ffc-demo-helm4
   namespace: ${NAMESPACE}
   annotations:
-    serviceoperator.azure.com/reconcile-policy: skip
+    serviceoperator.azure.com/reconcile-policy: detach-on-delete
 spec:
   maxDeliveryCount: 20
   owner:
