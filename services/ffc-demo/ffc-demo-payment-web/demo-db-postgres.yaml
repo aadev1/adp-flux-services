@@ -1,7 +1,7 @@
 apiVersion: dbforpostgresql.azure.com/v1api20220120preview
 kind: FlexibleServersDatabase
 metadata:
-  name: ${NAMESPACE}-asotestdb
+  name: ffc-demo-helm4
   namespace: ${NAMESPACE}
 spec:
   owner:
