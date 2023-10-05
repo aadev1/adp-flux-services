@@ -5,3 +5,6 @@ resources:
   # - aso-helm-release.yaml
   - demo-sb-queue.yaml # Need to be moved out and included in ASO abstraction work
   - demo-db-postgres.yaml # Need to be moved out and included in ASO abstraction work
+
+
+./asoctl.exe import azure-resource /subscriptions/55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1/resourceGroups/SNDADPINFRG1401/providers/Microsoft.ServiceBus/namespaces/SNDADPINFSB1401/queues/calculation -o queue.yaml

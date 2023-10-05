@@ -24,7 +24,7 @@ spec:
       TENANT_ID: "6f504113-6b64-43f2-ade9-242e05780007" 
       SUBSCRIPTION_ID: "55f3b8c6-6800-41c7-a40d-2adb5e4e1bd1"
       SUBSCRIPTION_NAME: "azd-adp-snd1"
-      CLIENT_ID: "" # TEAM MI CLIENT_ID
+      CLIENT_ID: "0acb7a5a-edc7-4423-b888-e7cc94b4ceee" # TEAM MI CLIENT_ID
       TEAM_RG: "sndadpinfrg1401"
       SERVICEBUS_RG: "${SERVICEBUS_RG}"
       SERVICEBUS_NS: "${SERVICEBUS_NS}"
