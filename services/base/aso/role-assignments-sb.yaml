@@ -5,14 +5,11 @@ metadata:
   namespace: platform-team
 spec:
   owner:
-    # name: ${NAMESPACE}-rg
-    # group: servicebus.azure.com
-    # kind: Namespace
     armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/${SERVICEBUS_RG}/providers/Microsoft.ServiceBus/namespaces/${SERVICEBUS_NS}
-  # This is the Principal ID of the AAD identity to which the role will be assigned
   principalIdFromConfig:
     name: ${NAMESPACE}-aso-mi-identity-settings
     key: principalId
   roleDefinitionReference:
     # Azure Service Bus Data Owner
     armId: /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/090c5cfd-751d-490a-894a-3ce6f1109419
+    # Needs to be a custom role with lesser privileges

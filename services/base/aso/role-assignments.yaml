@@ -5,7 +5,7 @@ metadata:
   namespace: platform-team
 spec:
   owner:
-    name: ${NAMESPACE}-rg
+    name: ${TEAM_RG}-${NAMESPACE}
     group: resources.azure.com
     kind: ResourceGroup
   principalIdFromConfig:
