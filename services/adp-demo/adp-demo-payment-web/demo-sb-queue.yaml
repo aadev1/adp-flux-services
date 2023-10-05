@@ -4,5 +4,6 @@ metadata:
   name: ffc-demo-helm4
   namespace: ${NAMESPACE}
 spec:
+  maxDeliveryCount: 5
   owner:
     armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/${SERVICEBUS_RG}/providers/Microsoft.ServiceBus/namespaces/${SERVICEBUS_NS}
