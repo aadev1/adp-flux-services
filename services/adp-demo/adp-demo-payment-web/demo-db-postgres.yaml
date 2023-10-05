@@ -1,0 +1,9 @@
+apiVersion: dbforpostgresql.azure.com/v1api20220120preview
+kind: FlexibleServersDatabase
+metadata:
+  name: ffc-demo-helm4
+  namespace: ${NAMESPACE}
+spec:
+  owner:
+    armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/${POSTGRES_SERVER_RG}/providers/Microsoft.DBforPostgreSQL/flexibleServers/${POSTGRES_SERVER}
+  charset: utf8

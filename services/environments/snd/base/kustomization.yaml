@@ -4,4 +4,5 @@ resources:
   - image-update.yaml
   #- ../../../team-aa/base
   - ../../../ffc-demo/base/patch
+  - ../../../adp-demo/base/patch
 
