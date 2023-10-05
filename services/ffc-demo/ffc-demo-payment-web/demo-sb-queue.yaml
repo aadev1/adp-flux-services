@@ -3,6 +3,8 @@ kind: NamespacesQueue
 metadata:
   name: ffc-demo-helm4
   namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/reconcile-policy: skip
 spec:
   maxDeliveryCount: 20
   owner:
