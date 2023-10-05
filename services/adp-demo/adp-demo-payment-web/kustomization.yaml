@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
   # - aso-helm-repository.yaml
   # - aso-helm-release.yaml
-  - demo-sb-queue.yaml # Need to be moved out and included in ASO abstraction work
+  #- demo-sb-queue.yaml # Need to be moved out and included in ASO abstraction work
   #- demo-db-postgres.yaml # Need to be moved out and included in ASO abstraction work
