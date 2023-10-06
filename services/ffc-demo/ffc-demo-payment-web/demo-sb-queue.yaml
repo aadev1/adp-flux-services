@@ -1,10 +1,10 @@
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: NamespacesQueue
 metadata:
-  name: ffc-demo-helm4
+  name: ffc-demo-helm5
   namespace: ${NAMESPACE}
-  annotations:
-    serviceoperator.azure.com/reconcile-policy: detach-on-delete
+  # annotations:
+  #   serviceoperator.azure.com/reconcile-policy: detach-on-delete
 spec:
   maxDeliveryCount: 20
   owner:
