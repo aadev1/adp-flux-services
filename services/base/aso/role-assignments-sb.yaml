@@ -10,6 +10,4 @@ spec:
     name: ${NAMESPACE}-aso-mi-identity-settings
     key: principalId
   roleDefinitionReference:
-    # Azure Service Bus Data Owner
-    armId: /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/090c5cfd-751d-490a-894a-3ce6f1109419
-    # Needs to be a custom role with lesser privileges
+    armId: /subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/roleDefinitions/090c5cfd-751d-490a-894a-3ce6f1109419 # Azure Service Bus Data Owner

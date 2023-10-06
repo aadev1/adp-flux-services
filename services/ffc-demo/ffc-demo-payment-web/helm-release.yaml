@@ -18,8 +18,8 @@ spec:
     createNamespace: true
   interval: 5m0s
   targetNamespace: ffc-demo
-  # dependsOn:
-  #   - name: ffc-demo-payment-web-infra
+  dependsOn:
+    - name: ffc-demo-payment-web-infra
   values:
     aadWorkloadIdentity: true
     serviceAccount:
