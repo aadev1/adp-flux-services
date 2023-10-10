@@ -1,0 +1,14 @@
+apiVersion: servicebus.azure.com/v1api20210101preview
+kind: Namespace
+metadata:
+  name: aso-namespace-aa
+  namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+spec:
+  location: uksouth
+  owner:
+    armid: /subscriptions/a905f68e-daad-4402-a2a6-dacfeb83534d/resourceGroups/aatest
+  sku:
+    name: Standard
+  zoneRedundant: false
