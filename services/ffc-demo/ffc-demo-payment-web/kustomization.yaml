@@ -8,4 +8,4 @@ resources:
   - image-repository.yaml  
   - image-policy.yaml
   - demo-sb-queue.yaml
-  - storage.yaml
+  - mi.yaml
