@@ -1,3 +1,15 @@
+apiVersion: resources.azure.com/v1api20200601
+kind: ResourceGroup
+metadata:
+  name: aatest
+  namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+    serviceoperator.azure.com/reconcile-policy: detach-on-delete
+spec:
+  location: uksouth
+
+---
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: Namespace
 metadata:
@@ -8,7 +20,7 @@ metadata:
 spec:
   location: uksouth
   owner:
-    armid: /subscriptions/a905f68e-daad-4402-a2a6-dacfeb83534d/resourceGroups/aatest
+    name: aatest
   sku:
     name: Standard
   zoneRedundant: false
