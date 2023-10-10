@@ -10,6 +10,19 @@ spec:
   location: uksouth
 
 ---
+apiVersion: managedidentity.azure.com/v1api20181130
+kind: UserAssignedIdentity
+metadata:
+  name: cred-from-aso
+  namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+spec:
+  location: uksouth
+  owner:
+    name: aatest
+
+---
 apiVersion: servicebus.azure.com/v1api20210101preview
 kind: Namespace
 metadata:
