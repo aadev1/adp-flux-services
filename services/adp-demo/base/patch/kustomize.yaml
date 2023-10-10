@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: ffc-demo-base
+  name: adp-demo-base
   namespace: config-cluster-flux
 spec:
   sourceRef:
@@ -11,13 +11,13 @@ spec:
   interval: 5m
   timeout: 3m
   prune: true
-  path: ./services/ffc-demo/${ENVIRONMENT}/${CLUSTER}
+  path: ./services/adp-demo/${ENVIRONMENT}/${CLUSTER}
   postBuild:
     substitute:
-      NAMESPACE: "ffc-demo"
+      NAMESPACE: "adp-demo"
       WORKLOAD_IDENTITY_ID: "3acd7d69-86fb-40ce-a389-4632e864e425"
-      TEAM_NAME: "ffc-demo-team"
-      CLIENT_ID: "dfd41e14-a927-4dc0-bf4f-9f47b78564da" # TEAM MI CLIENT_ID
+      TEAM_NAME: "adp-demo-team"
+      CLIENT_ID: "" # TEAM MI CLIENT_ID
       TEAM_RG: "sndadpinfrg1401"
       ENVIRONMENT: "${ENVIRONMENT}"
       ACR_NAME: "${ACR_NAME}"
