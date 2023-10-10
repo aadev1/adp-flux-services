@@ -5,7 +5,7 @@ metadata:
   namespace: ${NAMESPACE}
   annotations:
     serviceoperator.azure.com/credential-from: cred-from-defraclouddev
-    serviceoperator.azure.com/reconcile-policy: detach-on-delete
+    #serviceoperator.azure.com/reconcile-policy: detach-on-delete
 spec:
   location: uksouth
 
