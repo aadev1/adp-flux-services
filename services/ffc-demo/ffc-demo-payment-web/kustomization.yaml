@@ -7,4 +7,5 @@ resources:
   - helm-release.yaml
   - image-repository.yaml  
   - image-policy.yaml
-  # - demo-sb-queue.yaml
+  - demo-sb-queue.yaml
+  - storage.yaml

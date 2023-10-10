@@ -1,0 +1,15 @@
+apiVersion: storage.azure.com/v1api20220901
+kind: StorageAccount
+metadata:
+  name: samplekubestorageaaadp
+  namespace: ${NAMESPACE}
+  annotations:
+    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+spec:
+  location: uksouth
+  kind: StorageV2
+  sku:
+    name: Standard_LRS
+  owner:
+    armid: /subscriptions/a905f68e-daad-4402-a2a6-dacfeb83534d/resourceGroups/aatest
+  accessTier: Hot
