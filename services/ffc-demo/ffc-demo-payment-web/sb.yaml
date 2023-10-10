@@ -15,8 +15,8 @@ kind: UserAssignedIdentity
 metadata:
   name: cred-from-aso
   namespace: ${NAMESPACE}
-  annotations:
-    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+  # annotations:
+  #   serviceoperator.azure.com/credential-from: cred-from-defraclouddev
 spec:
   location: uksouth
   owner:
