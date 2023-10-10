@@ -22,18 +22,18 @@ spec:
   owner:
     name: aatest
 
----
-apiVersion: servicebus.azure.com/v1api20210101preview
-kind: Namespace
-metadata:
-  name: aso-namespace-aa
-  namespace: ${NAMESPACE}
-  annotations:
-    serviceoperator.azure.com/credential-from: cred-from-defraclouddev
-spec:
-  location: uksouth
-  owner:
-    name: aatest
-  sku:
-    name: Standard
-  zoneRedundant: false
+# ---
+# apiVersion: servicebus.azure.com/v1api20210101preview
+# kind: Namespace
+# metadata:
+#   name: aso-namespace-aa
+#   namespace: ${NAMESPACE}
+#   annotations:
+#     serviceoperator.azure.com/credential-from: cred-from-defraclouddev
+# spec:
+#   location: uksouth
+#   owner:
+#     name: aatest
+#   sku:
+#     name: Standard
+#   zoneRedundant: false
