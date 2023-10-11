@@ -7,7 +7,7 @@ resources:
   - aso/federated-credential.yaml
   - aso/resource-group.yaml
   - aso/role-assignments.yaml
-  - aso/role-assignments-sb.yaml
+  #- aso/role-assignments-sb.yaml
   - aso/role-assignments-pgdb.yaml
   - aso/team-secret.yaml
   - aso/cred-from-mi-test.yaml
