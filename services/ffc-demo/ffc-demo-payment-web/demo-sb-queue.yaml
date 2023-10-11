@@ -3,8 +3,8 @@ kind: NamespacesQueue
 metadata:
   name: ffc-demo-helm
   namespace: ${NAMESPACE}
-  annotations:
-    serviceoperator.azure.com/credential-from: cred-from-test
+  # annotations:
+  #   serviceoperator.azure.com/credential-from: cred-from-test
 spec:
   maxDeliveryCount: 20
   owner:
