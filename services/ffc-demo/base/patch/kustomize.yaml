@@ -4,6 +4,7 @@ metadata:
   name: ffc-demo-base
   namespace: config-cluster-flux
 spec:
+  serviceAccountName: ffc-demo
   sourceRef:
     kind: GitRepository
     name: services-repository
