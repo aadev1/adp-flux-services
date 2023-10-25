@@ -4,7 +4,6 @@ metadata:
   name: ffc-demo-base
   namespace: config-cluster-flux
 spec:
-  serviceAccountName: ffc-demo
   sourceRef:
     kind: GitRepository
     name: services-repository
@@ -33,3 +32,6 @@ spec:
       TEAM_MI_NAME: "${TEAM_MI_NAME}"
       POSTGRES_SERVER_RG: "${POSTGRES_SERVER_RG}"
       POSTGRES_SERVER: "${POSTGRES_SERVER}"
+    substituteFrom:
+      - kind: ConfigMap
+        name: ffc-demo-aso-mi-identity-settings
