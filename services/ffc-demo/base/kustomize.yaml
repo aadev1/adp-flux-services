@@ -1,8 +1,8 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: ffc-demo-base
-  namespace: config-cluster-flux
+  name: ffc-demo-aso-secret
+  namespace: platform-team
 spec:
   sourceRef:
     kind: GitRepository
@@ -11,7 +11,7 @@ spec:
   interval: 5m
   timeout: 3m
   prune: true
-  path: ./services/ffc-demo/${ENVIRONMENT}/${CLUSTER}
+  path: ./services/ffc-demo/base
   postBuild:
     substitute:
       NAMESPACE: "ffc-demo"
@@ -32,3 +32,8 @@ spec:
       TEAM_MI_NAME: "${TEAM_MI_NAME}"
       POSTGRES_SERVER_RG: "${POSTGRES_SERVER_RG}"
       POSTGRES_SERVER: "${POSTGRES_SERVER}"
+    substituteFrom:
+      - kind: ConfigMap
+        name: ffc-demo-aso-mi-identity-settings
+        # # Use this ConfigMap if it exists, but proceed if it doesn't.
+        # optional: true
