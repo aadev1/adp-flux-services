@@ -34,6 +34,6 @@ spec:
       POSTGRES_SERVER: "${POSTGRES_SERVER}"
     substituteFrom:
       - kind: ConfigMap
-        name: ffc-demo-aso-mi-identity-settings
+        name: platform-team/ffc-demo-aso-mi-identity-settings
         # # Use this ConfigMap if it exists, but proceed if it doesn't.
         # optional: true
