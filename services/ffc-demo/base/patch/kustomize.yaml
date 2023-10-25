@@ -32,3 +32,8 @@ spec:
       TEAM_MI_NAME: "${TEAM_MI_NAME}"
       POSTGRES_SERVER_RG: "${POSTGRES_SERVER_RG}"
       POSTGRES_SERVER: "${POSTGRES_SERVER}"
+    substituteFrom:
+      - kind: ConfigMap
+        name: ${NAMESPACE}-aso-mi-identity-settings
+        # # Use this ConfigMap if it exists, but proceed if it doesn't.
+        # optional: true
