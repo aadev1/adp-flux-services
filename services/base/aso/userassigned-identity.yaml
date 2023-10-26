@@ -3,7 +3,7 @@ kind: UserAssignedIdentity
 metadata:
   name: ${TEAM_MI_NAME}-${NAMESPACE}-ab
   namespace: config-cluster-flux
-  # namespace: platform-team
+  # namespace: config-cluster-flux
 spec:
   location: uksouth
   owner:
