@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - service-account.yaml
-  # - aso/userassigned-identity.yaml
+  - aso/userassigned-identity.yaml
   # - aso/federated-credential.yaml
   # - aso/resource-group.yaml
   # - aso/role-assignments.yaml
