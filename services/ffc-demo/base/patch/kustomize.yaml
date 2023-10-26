@@ -35,3 +35,4 @@ spec:
     substituteFrom:
       - kind: ConfigMap
         name: ffc-demo-aso-mi-identity-settings
+        optional: true
