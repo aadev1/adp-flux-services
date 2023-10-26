@@ -2,7 +2,8 @@ apiVersion: managedidentity.azure.com/v1api20181130
 kind: UserAssignedIdentity
 metadata:
   name: ${TEAM_MI_NAME}-${NAMESPACE}-aa
-  namespace: platform-team
+  namespace: config-cluster-flux
+  # namespace: platform-team
 spec:
   location: uksouth
   owner:
