@@ -1,0 +1,18 @@
+apiVersion: managedidentity.azure.com/v1api20181130
+kind: UserAssignedIdentity
+metadata:
+  name: ${TEAM_MI_NAME}-${NAMESPACE}-ab
+  namespace: config-cluster-flux
+  # namespace: config-cluster-flux
+spec:
+  location: uksouth
+  owner:
+    armId: /subscriptions/${SUBSCRIPTION_ID}/resourceGroups/${INFRA_RG}
+  operatorSpec:
+    configMaps:
+      principalId:
+        name: ${NAMESPACE}-aso-mi-identity-settings
+        key: principalId
+      clientId:
+        name: ${NAMESPACE}-aso-mi-identity-settings
+        key: clientId
